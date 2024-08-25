@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -31,38 +31,34 @@
 
 <body>
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center">
-    
-          <a href="index.html" class="logo d-flex align-items-center me-auto">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">logo</h1>
-          </a>
-    
-          <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="index.html" >Home</a></li>
-              <li><a href="#" class="active">About</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-          </nav>
-    
-          <a class="btn-getstarted" href="#donate">DONATE</a>
-         
-        </div>
-      </header>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+         <img src="assets/img/logo1.jpeg" alt="" id="logo"> 
+     <!--   <h1 class="sitename">logo</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="">EN|FR</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
 
       <main class="main">
     <!-- About Section -->
     <section id="about" class="about section">
 
         <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
+        <div class="container section-title" data-aos="fade-up" id="sous-titre">
           <h2>About Us</h2>
         </div><!-- End Section Title -->
   
@@ -70,142 +66,107 @@
   
           <div class="row gy-4">
   
-            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100" id="para">
+              <p id="para-about">
+                Our Story
               </p>
-              <ul>
-                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
-              </ul>
+              <p id="para2-about">
+                NND SERVICES was founded with a simple mission: to make life easier for our 
+                customers through reliable and efficient service. We 
+                understand the challenges of moving, delivering important 
+                items, and clearing out clutter, which is why we offer a 
+                range of solutions designed to meet your specific needs. 
+                Our team is committed to providing high-quality service, 
+                ensuring that every job is done right the first time.
+
+              </p>
             </div>
   
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-              <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <img src="./assets/img/mov.jpg" alt="" id="img-about">
             </div>
   
           </div>
   
         </div>
   
-      </section><!-- /About Section -->
+      </section>
     
-       <!-- Why Us Section -->
-    <section id="why-us" class="section why-us light-background" data-builder="section">
-
-        <div class="container-fluid">
-  
+    <section id="why-us" class="container">
           <div class="row gy-4">
   
-            <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-  
-              <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                <h3><span>Eum ipsam laborum deleniti </span><strong>velit pariatur architecto aut nihil</strong></h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                </p>
-              </div>
-  
-              <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-  
-                <div class="faq-item faq-active">
-  
-                  <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
-                  <div class="faq-content">
-                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
-  
-                <div class="faq-item">
-                  <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                  <div class="faq-content">
-                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
-  
-                <div class="faq-item">
-                  <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                  <div class="faq-content">
-                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                  </div>
-                  <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
-  
-              </div>
-  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <img src="./assets/img/junk.jpg" alt="" id="img-about">
             </div>
   
-            <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-              <img src="assets/img/why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-            </div>
-          </div>
-  
-        </div>
-  
-      </section><!-- /Why Us Section -->
-
-      <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-  
-          <div class="row">
-  
-            <div class="col-lg-6 d-flex align-items-center">
-              <img src="assets/img/skills.png" class="img-fluid" alt="">
-            </div>
-  
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-  
-              <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100" id="para">
+              <p id="para-about">
+                Our Values
               </p>
-  
-              <div class="skills-content skills-animation">
-  
-                <div class="progress">
-                  <span class="skill"><span>Moving</span> <i class="val">100%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-  
-                <div class="progress">
-                  <span class="skill"><span>Ammenagement</span> <i class="val">90%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-  
-                <div class="progress">
-                  <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-  
-                <div class="progress">
-                  <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-  
-              </div>
-  
-            </div>
-          </div>
-  
-        </div>
-  
-      </section><!-- /Skills Section -->
+              <p id="para2-about">
+                At NND SERVICES, we believe in integrity, professionalism, and community. These values 
+                guide everything we do, from handling your possessions
+                with care to ensuring a positive impact on the 
+                communities we serve. We take pride in being a company 
+                you can trust, where customer satisfaction is our top 
+                priority.
 
+              </p>
+            </div>
+  
+      </section>
+
+      <section id="why-us" class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100" id="para">
+            <p id="para-about">
+              Our Services
+            </p>
+            <p id="para2-about">
+              We offer a full suite of services, including moving, 
+              delivery, junk removal, and a unique donation program 
+              that helps connect people with those in need. Whether you are relocating, sending a package, or clearing out your home, we are here to help with 
+              a friendly and efficient approach.
+
+            </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <img src="./assets/img/del.jpg" alt="" id="img-about">
+          </div>
+
+    </section>
+    <section id="why-us" class="container">
+      <div class="row gy-4">
+
+        <div class="col-lg-6 " id="para">
+          <p id="para-about">
+            Our Commitment to the Community
+          </p>
+          <p id="para2-about">
+            Giving back is at the heart of what we do. Through our donation service, we help reduce waste by redistributing gently used items to families and organizations in need. This initiative not only supports those who could benefit from your donations but 
+            also contributes to a more sustainable and caring community.
+
+          </p>
+        </div>
+
+        <div class="col-lg-6 " id="para">
+          <p id="para-about">
+            Why Choose Us?
+          </p>
+          <p id="para2-about">
+            Choosing NND SERVICES means choosing a partner who values your time, your belongings, and your trust. With a team of experienced professionals, a commitment to excellence, and a strong focus on customer care, 
+            we strive to exceed your expectations with every service.
+
+          </p>
+        </div>
+
+        
+
+  </section>
+
+      
     </main>
     <footer id="footer" class="footer">
 
@@ -213,35 +174,32 @@
         <div class="row gy-3">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="d-flex align-items-center">
-              <span class="sitename">MOVING-SERVICE</span>
+              <span class="sitename">NND-SERVICEs</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p>24 Abberfield Crescent NE</p>
+              <p>Calgary Alberta- T2A6N6</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 000 000 0000</span></p>
+              <p><strong>Email:</strong> <span></span></p>
             </div>
           </div>
   
   
-          <div class="col-lg-2 col-md-3 footer-links">
+          <div class="col-lg-3 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Moving</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#"> Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICES </a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICES</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICES</a></li>
             </ul>
           </div>
   
-          <div class="col-lg-4 col-md-12 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Follow Us</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <p>follow our various updates also on</p>
             <div class="social-links d-flex">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-whatsapp"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
   
