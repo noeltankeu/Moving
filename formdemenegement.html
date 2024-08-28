@@ -64,8 +64,12 @@
 
     <div class="col-lg-7 section" id="formde">
         <form action=" " method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          
           <div class="row gy-4">
+          <fieldset class="row gy-4">
+          <legend > Personal information</legend>
 
+          
             <div class="col-md-6">
               <label for="name-field" class="pb-2">Name</label>
               <input type="text" name="name" id="name-field" class="form-control" required="required">
@@ -81,13 +85,17 @@
               <input type="email" class="form-control" name="email" id="email-field" required="required">
             </div>
 
+          </fieldset>
+
+          <fieldset class="row gy-4">
+            <legend> moving information</legend>
             <div class="col-md-6">
-              <label for="date-demenage-field" class="pb-2">Date of demenagement </label>
+              <label for="date-demenage-field" class="pb-2">Date of moving </label>
               <input type="date" name="date-demenage" id="date-demenage-field" class="form-control" required="required">
             </div>
 
             <div class="col-md-6">
-              <label for="time-demenage-field" class="pb-2">Time of demenagement </label>
+              <label for="time-demenage-field" class="pb-2">Time of moving </label>
               <input type="time" name="date-demenage" id="time-demenage-field" class="form-control" required="required">
             </div>
 
@@ -97,10 +105,9 @@
             </div>
 
             <div class="col-md-6">
-              <label for="adress-field" class="pb-2"> Pick-up Address (address, city, province, Postal code)</label>
-              <input type="text" name="PUadress" id="adress-field" class="form-control" required="required" >
+              <label for="adress-field" class="pb-2"> Pick-up Address </label>
+              <input type="text" name="PUadress" id="adress-field" class="form-control" required="required"  value="address, city, province, Postal code">
             </div>
-
             <div class="col-md-6">
               <label for="adress-field" class="pb-2"> Accessibility Pick-up Address</label>
               <select name="acess" id="acces-PUadress">
@@ -112,8 +119,8 @@
 
 
             <div class="col-md-6">
-              <label for="adress-field" class="pb-2"> Drop-off Address (address, city, province, Postal code)</label>
-              <input type="text" name="DOadress" id="adress-field" class="form-control" required="required" >
+              <label for="adress-field" class="pb-2"> Drop-off Address</label>
+              <input type="text" name="DOadress" id="adress-field" class="form-control" required="required" value="address, city, province, Postal code" >
             </div>
 
             <div class="col-md-6">
@@ -124,7 +131,9 @@
                 <option value="Upstrairs"> Upstrairs</option>
               </select>
             </div>
-
+          </fieldset>
+            <fieldset class="row gy-4">
+              <legend> additional information</legend>
             <div class="col-md-12">
               <label for="subject-field" class="pb-2">Subject (Details about any large or delicate items like pianos and antiques)</label>
               <textarea class="form-control" name="message" rows="5" id="subject-field" required="required"></textarea>
@@ -142,7 +151,7 @@
 
               <button type="submit">Send Message</button>
             </div>
-
+          </fieldset>
           </div>
         </form>
       </div>

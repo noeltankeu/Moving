@@ -2136,6 +2136,11 @@ opacity: 0.2;
   text-transform: uppercase;
   font-size: 1.5rem;
   color: rgb(2, 2, 46);
+  text-align: justify;
+}
+
+#para2-about{
+  text-align: justify;
 }
 
 #para{
@@ -2146,4 +2151,21 @@ opacity: 0.2;
 #sous-titre{
   margin-top: 50px;
  
+}
+
+#papa{
+  font-size: 0.9rem;
+  text-align: justify;
+ 
+}
+
+#para-ser{
+text-align: justify;
+ padding: 0;
+ margin: 0 auto;
+}
+
+legend{
+  font-weight: bold;
+  
 }
