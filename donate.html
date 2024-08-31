@@ -30,17 +30,17 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-         <img src="assets/img/logo1.jpeg" alt="" id="logo"> 
+      <a href="index.html" class="me-auto">
+         <img src="assets/img/logo3.jpg" alt="" id="logo"> 
      <!--   <h1 class="sitename">logo</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html"  >Home</a></li>
+          <li><a href="services.html" >Services</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
           <li><a href="#" class="active">Donate</a></li>
           <li><a href="">EN|FR</a></li>
         </ul>
@@ -48,6 +48,7 @@
       </nav>
     </div>
   </header>
+
 
       <section id="services" class="services section light-background">
 
@@ -66,75 +67,175 @@
           </p>
         </div>
       </section>
-
-      <div class="col-md-12 text-center">
-        <a href="agrement.html" id="conf"> Click here and read Agreement to Terms </a>
-      </div>
-
-    <div class="col-lg-7 section" id="formde">
-        <form action=" " method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+      <div id="bg-donate">
+      <div class="col-lg-7 section" id="formde">
+      
+        <form action=" " method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200" >
           <div class="row gy-4">
 
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Name</label>
+            <div class="col-md-12">
+              <label for="name-field" class="pb-2">Name <span id="oblige">*</span></label>
               <input type="text" name="name" id="name-field" class="form-control" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="tel-field" class="pb-2">Tel.</label>
+            <div class="col-md-12">
+              <label for="tel-field" class="pb-2">Tel. <span id="oblige">*</span></label>
               <input type="tel" class="form-control" name="telephone" id="tel-field" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="email-field" class="pb-2">E-mail</label>
+            <div class="col-md-12">
+              <label for="email-field" class="pb-2">E-mail<span id="oblige">*</span></label>
               <input type="email" class="form-control" name="email" id="email-field" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="date-demenage-field" class="pb-2">Date of donate </label>
+            <div class="col-md-12">
+              <label for="date-demenage-field" class="pb-2">Donation date <span id="oblige">*</span></label>
               <input type="date" name="date-demenage" id="date-demenage-field" class="form-control" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="time-demenage-field" class="pb-2">Time of donate </label>
+            <div class="col-md-12">
+              <label for="time-demenage-field" class="pb-2">Donation time <span id="oblige">*</span></label>
               <input type="time" name="date-demenage" id="time-demenage-field" class="form-control" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="adress-field" class="pb-2"> Pick-up Address (address, city, province, Postal code)</label>
+            <div class="col-md-12">
+              <label for="adress-field" class="pb-2"> Pick-up Address (address, city, province, Postal code) <span id="oblige">*</span></label>
               <input type="text" name="PUadress" id="adress-field" class="form-control" required="required" >
             </div>
 
             <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Description: A detailed description of each item being donated (e.g., type, size, material, color)</label>
+              <label for="subject-field" class="pb-2">Description: A detailed description of each item being donated (e.g., type, size, material, color) <span id="oblige">*</span></label>
               <textarea class="form-control" name="message" rows="5" id="subject-field" required="required"></textarea>
             </div>
 
             <div class="col-md-12">
-              <label for="message-field" class="pb-2">Condition: The current condition of the items (e.g., gently used, good, fair, needs repair).</label>
+              <label for="message-field" class="pb-2">Condition: The current condition of the items (e.g., gently used, good, fair, needs repair)<span id="oblige">*</span></label>
               <textarea class="form-control" name="message" rows="5" id="message-field" required="required"></textarea>
             </div>
 
             <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Handling Instructions: Any special care needed when handling the items (e.g., fragile, requires disassembly)</label>
+              <label for="subject-field" class="pb-2">Handling Instructions: Any special care needed when handling the items (e.g., fragile, requires disassembly) <span id="oblige">*</span></label>
               <textarea class="form-control" name="message" rows="5" id="subject-field" required="required"></textarea>
             </div>
 
             <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Additional Notes: Any other relevant information or specific requests from the donor</label>
+              <label for="subject-field" class="pb-2">Additional Notes: Any other relevant information or specific requests from the donor <span id="oblige">*</span></label>
               <textarea class="form-control" name="message" rows="5" id="subject-field" required="required"></textarea>
             </div>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2">Terms and Conditions for Donation Services <span id="oblige">*</span></label>
+              <div  id="agr-div">
+                <ol>
+                    <li>
+                        Acceptance of Donations
+                    </li>
+                    <p>
+                      NND SERVICES reserves the right to accept or decline any donated items based 
+                      on their condition, suitability, and the needs of the 
+                      recipients. Items must be in gently used or good condition, free from significant damage, stains, or excessive wear.
+                      The final decision regarding the acceptability of any donated item will 
+                      be made by NND SERVICES. If an item is deemed unsuitable for donation, NND SERVICES may refuse to 
+                      collect the item or dispose of it responsibly.
+                    </p>
+    
+                    <li>
+                      Pick-up Fees
+                    </li>
+                    <p>
+                      Donors are required to cover the cost of 
+                      pick-up services. The fee for pick-up will be communicated in advance based on the location, size, and quantity of the items.
+                      Payment for the pick-up service must be made prior to
+                       or at the time of collection
+                    </p>
+    
+                    <li>
+                      Scheduling and Cancellations
+                    </li>
+                    <p>
+                      Pick-up appointments must be scheduled in
+                      advance and are subject to availability.
+                      Donors will be provided with a date and time window for the collection of their items.
+                      If a donor needs to cancel or reschedule a pick-up,
+                      they must notify NND SERVICES at least 24 hours in advance. 
+                      Failure to do so may result in forfeiture of any fees paid.
+                    </p>
+    
+                    <li>
+                      Condition of Items
+                    </li>
+                    <p>
+                      Donors are required to provide accurate 
+                      descriptions and, if possible, photos of 
+                      the items they wish to donate. NND SERVICES
+                      relies on this information to assess the 
+                      suitability of items before pick-up.
+                      Items that are heavily damaged, broken, or in need of 
+                      significant repair may not be accepted. NND SERVICES will 
+                      make the final determination during pick-up
+                       and may refuse any item that does not meet quality standards.
+                    </p>
+    
+                    <li>
+                      Ownership and Transfer of Items
+                    </li>
+                    <p>
+                      By donating items to NND SERVICES, the donor relinquishes all
+                      ownership rights to the items. Once collected, the 
+                      items become the property of NND SERVICES and may be 
+                      distributed to those in need, recycled, or disposed of 
+                      at the company’s discretion.
+                    </p>
+    
+                    <div>
+                      <li> Liability </li>
+                      <p>
+                        NND SERVICES is not responsible for any 
+                        loss or damage to items once they have 
+                        been collected. Donors should ensure that all items are appropriately packed and ready for transport.
+                        NND SERVICES will take reasonable care in handling items 
+                        during pick-up, but the company is not liable for any damage that may occur 
+                        during the transportation of donated goods.
+                      </p>
+                    </div>
+    
+                    <div>
+                      <li>
+                        Privacy and Data Protection
+                      </li>
+                      <p>
+                        NND SERVICES respects the privacy of all donors and will not share personal information with third parties without consent, except as necessary to facilitate the donation process.
+                        Donor information will be stored securely and used only 
+                        for purposes related to the donation service.
+                      </p>
+                    </div>
+    
+                    <div>
+                      <li>
+                        Agreement
+                      </li>
+                      <p>
+                        By scheduling a donation pick-up with NND SERVICES, donors acknowledge that they have read, understood, 
+                        and agree to these terms and conditions.
+                      </p>
+                    </div>
+                  </ol>
+                  <div id="agreed" class="col-md-5">
+                    <input type="checkbox" name="agrement" id="">
+                    <label for=" agrement"> I have read and I accept <span id="oblige">*</span></label>
+                  </div>
+                </div>
+                
+            </div>
 
-              <button type="submit">Send Message</button>
+            <div class="col-md-12 text-center">
+
+              <button type="submit" class="btn-get-fre">Send Message</button>
             </div>
 
           </div>
         </form>
+      </div>
       </div>
       <!-- End Contact Form -->
 
@@ -143,33 +244,30 @@
         <div class="container footer-top">
           <div class="row gy-3">
             <div class="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" class="d-flex align-items-center">
-                <span class="sitename">NND-SERVICEs</span>
-              </a>
-              <div class="footer-contact pt-3">
+              <h4 id="titre-foot"> <a href="index.html"> NND SERVICES </a></h4>
+              <div>
                 <p>24 Abberfield Crescent NE</p>
                 <p>Calgary Alberta- T2A6N6</p>
-                <p class="mt-3"><strong>Phone:</strong> <span>+1 000 000 0000</span></p>
-                <p><strong>Email:</strong> <span></span></p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+1 368 889 5240</span></p>
+                <p><strong>Email:</strong> <span>fghjklm</span></p>
               </div>
             </div>
     
     
-            <div class="col-lg-3 col-md-3 footer-links">
-              <h4>Our Services</h4>
+            <div class="col-lg-4 col-md-10 footer-links">
+              <h4 id="titre-foot">Our Services</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICES </a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICES</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICES</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICE </a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICE</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICE</a></li>
               </ul>
             </div>
     
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Follow Us</h4>
-              <p>follow our various updates also on</p>
+            <div class="col-lg-2 col-md-8 footer-links">
+              <h4 id="titre-foot">Follow Us</h4>
               <div class="social-links d-flex">
                 <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61557885560451&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
               </div>
             </div>
     
@@ -177,7 +275,7 @@
         </div>
     
         <div class="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong class="px-1 sitename">TANKEU</strong> <span>All Rights Reserved</span></p>
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">NND SERVICES</strong> <span>All Rights Reserved</span></p>
           <div class="credits">
             
             Designed by <a href="https://bootstrapmade.com/">ChristelleTankeu</a>

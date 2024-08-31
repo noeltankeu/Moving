@@ -76,57 +76,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -839,18 +788,19 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  margin: 0 auto;
+ margin: 0 auto;
   width: 100%;
   min-height: 80vh;
   position: relative;
-  padding: 120px 10px 40px 0;
+  padding: 150px 10px 10px 0;
   display: flex;
   align-items: center;
 }
 
+
 .hero::before {
   content: '';
-  background-image: url(../img/hero.jpg);
+  background-image: url(../img/Arrière\ plan\ page\ acceuil.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -859,7 +809,7 @@ top: 0;
 left: 0;
 bottom: 0;
 right: 0;  
-opacity: 0.2;
+opacity: 0.5;
 }
 
 .hero h1 {
@@ -887,20 +837,54 @@ opacity: 0.2;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  margin: 0 auto;
   padding: 10px 28px 12px 28px;
   border-radius: 50px;
+  transition: 0.5s;
+  position: relative;
+}
+.btn-get-fre {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  margin-top: 20px;
+  border-radius: 20px;
+  transition: 0.5s;
+  position: relative;
+}
+.btn-get-fr {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  margin-top: 45px;
+  border-radius: 20px;
   transition: 0.5s;
   position: relative;
 }
 
 #img-prin{
   position: relative;
+  height: 320px;
+}
+
+#ip{
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-
+  background-position: center; 
+  height: 320px;
+  width: 100%;
 }
+
+
 .hero .btn-get-started:hover {
   position: relative;
   color: var(--contrast-color);
@@ -908,6 +892,7 @@ opacity: 0.2;
 }
 
 .hero .btn-watch-video {
+  position: relative;
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
@@ -921,14 +906,17 @@ opacity: 0.2;
   transition: 0.3s;
   line-height: 0;
   margin-right: 8px;
+  position: relative;
 }
 
 .hero .btn-watch-video:hover {
   color: var(--accent-color);
+  position: relative;
 }
 
 .hero .btn-watch-video:hover i {
   color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  position: relative;
 }
 
 .hero .animated {
@@ -2103,19 +2091,33 @@ opacity: 0.2;
 # formulaire
 --------------------------------------------------------------*/
 #formde{
-  margin: 0 auto;
+  margin: 0px auto;
+  padding: 25px;
+}
 
+#bg-about{
+  background: url(../img/Arrière\ plan\ ABOUT.png) center/cover;
+  min-height: 730px;
 }
 
 #logo{
- width: 15rem;
- 
+  width: 100%;
+  height: 90px;
+}
+
+#agreed{
+  margin: 0px auto;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 #agr-div{
-  margin: 0 auto;
   text-align: justify;
-  width:  80%;
+  overflow-y: scroll;
+  height: 15rem;
+  border: grey solid 0.5px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 #conf{
@@ -2149,14 +2151,13 @@ opacity: 0.2;
 }
 
 #sous-titre{
-  margin-top: 50px;
- 
+  margin-top: 100px; 
 }
 
 #papa{
   font-size: 0.9rem;
   text-align: justify;
- 
+  color: white;
 }
 
 #para-ser{
@@ -2168,4 +2169,70 @@ text-align: justify;
 legend{
   font-weight: bold;
   
+}
+
+
+.slider {
+  height: 320px;
+  width: 100%;
+  background: url(../img/Slide\ 1\ page\ acceuil.png) center/cover;
+  
+  animation: glisse 50s linear infinite normal;
+  animation-fill-mode: both;
+}
+@keyframes glisse {
+  0% {
+    background: url(../img/Slide\ 2\ page\ acceuil.png) center/cover;
+  }
+  14% {
+    background: url(../img/Slide\ 3\ page\ acceuil.png) center/cover;
+  }
+  27% {
+    background: url(../img/Slide\ 4\ page\ acceuil.png) center/cover;
+  }
+  40% {
+    background: url(../img/Slide\ 5\ page\ acceuil.png) center/cover;
+  }
+  53% {
+    background: url(../img/Slide\ 6\ page\ acceuil.png) center/cover;
+  }
+  66% {
+    background: url(../img/Slide\ 7\ page\ acceuil.png) center/cover;
+  }
+  79% {
+    background: url(../img/Slide\ 8\ page\ acceuil.png) center/cover;
+  }
+  100% {
+    background: url(../img/Slide\ 9\ page\ acceuil.png) center/cover;
+  }
+}
+
+#titre-foot{
+  font-size: 1.8rem; 
+}
+
+#contact-bg{
+  background-image: url(../img/Arrière\ plan\ CONTACT.png);
+  width: 100% ;
+  min-height: 680px;
+}
+
+
+#bg-donate{
+  background: url(../img/Arriére\ plan\ DONATE.png) center/cover;
+}
+
+#ser-prin{
+  margin-bottom: 70px;
+}
+
+#heure{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+#oblige{
+  color: red;
 }

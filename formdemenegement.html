@@ -30,18 +30,18 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-         <img src="assets/img/logo1.jpeg" alt="" id="logo"> 
+      <a href="index.html" class="me-auto">
+         <img src="assets/img/logo3.jpg" alt="" id="logo"> 
      <!--   <h1 class="sitename">logo</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="donate.html">Donate</a></li>
+          <li><a href="index.html"  >Home</a></li>
+          <li><a href="services.html" class="active" >Services</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="donate.html" >Donate</a></li>
           <li><a href="">EN|FR</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -54,62 +54,50 @@
         
         <div class="container section-title" data-aos="fade-up" id="sous-titre">
           <h2>Get a quick quote for moving services</h2>
-          <p>NND SERVICES offers reliable and efficient moving solutions tailored to your needs.
-            Whether you are relocating across town or to a new city, our professional team ensures your
-            belongings are safely packed, transported, and delivered to your new home. We handle
-            everything from small apartments to large houses, making your move as stress-free as
-            possible.</p>
         </div>
       </section>
 
-    <div class="col-lg-7 section" id="formde">
+    <div class="col-lg-7 container" id="formde" >
         <form action=" " method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
           
           <div class="row gy-4">
-          <fieldset class="row gy-4">
-          <legend > Personal information</legend>
-
           
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Name</label>
+            <div class="col-md-12">
+              <label for="name-field" class="pb-2">Name <span id="oblige">*</span></label>
               <input type="text" name="name" id="name-field" class="form-control" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="tel-field" class="pb-2">Tel.</label>
+            <div class="col-md-12">
+              <label for="tel-field" class="pb-2">Tel. <span id="oblige">*</span></label>
               <input type="tel" class="form-control" name="telephone" id="tel-field" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="email-field" class="pb-2">E-mail</label>
+            <div class="col-md-12">
+              <label for="email-field" class="pb-2">E-mail <span id="oblige">*</span></label>
               <input type="email" class="form-control" name="email" id="email-field" required="required">
             </div>
 
-          </fieldset>
-
-          <fieldset class="row gy-4">
-            <legend> moving information</legend>
-            <div class="col-md-6">
-              <label for="date-demenage-field" class="pb-2">Date of moving </label>
+            <div class="col-md-12">
+              <label for="date-demenage-field" class="pb-2">Moving date <span id="oblige">*</span></label>
               <input type="date" name="date-demenage" id="date-demenage-field" class="form-control" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="time-demenage-field" class="pb-2">Time of moving </label>
+            <div class="col-md-12">
+              <label for="time-demenage-field" class="pb-2"> Moving time <span id="oblige">*</span></label>
               <input type="time" name="date-demenage" id="time-demenage-field" class="form-control" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="size" class="pb-2">Size of the Move  (Number of rooms) </label>
+            <div class="col-md-12">
+              <label for="size" class="pb-2">Size of the Move  (Number of rooms) <span id="oblige">*</span> </label>
               <input type="text" name="name" id="size" class="form-control" required="required">
             </div>
 
-            <div class="col-md-6">
-              <label for="adress-field" class="pb-2"> Pick-up Address </label>
-              <input type="text" name="PUadress" id="adress-field" class="form-control" required="required"  value="address, city, province, Postal code">
+            <div class="col-md-12">
+              <label for="adress-field" class="pb-2"> Pick-up Address (address, city, province, Postal code) <span id="oblige">*</span></label>
+              <input type="text" name="PUadress" id="adress-field" class="form-control" required="required" >
             </div>
             <div class="col-md-6">
-              <label for="adress-field" class="pb-2"> Accessibility Pick-up Address</label>
+              <label for="adress-field" class="pb-2"> Accessibility Pick-up Address <span id="oblige">*</span></label>
               <select name="acess" id="acces-PUadress">
                 <option value="basement"> Basement</option>
                 <option value="Main floor">Main floor</option>
@@ -118,40 +106,35 @@
             </div>
 
 
-            <div class="col-md-6">
-              <label for="adress-field" class="pb-2"> Drop-off Address</label>
-              <input type="text" name="DOadress" id="adress-field" class="form-control" required="required" value="address, city, province, Postal code" >
+            <div class="col-md-12">
+              <label for="adress-field" class="pb-2"> Drop-off Address (address, city, province, Postal code)<span id="oblige">*</span></label>
+              <input type="text" name="DOadress" id="adress-field" class="form-control" required="required" >
             </div>
 
-            <div class="col-md-6">
-              <label for="adress-field" class="pb-2"> Accessibility Drop-off Address</label>
+            <div class="col-md-12">
+              <label for="adress-field" class="pb-2"> Accessibility Drop-off Address <span id="oblige">*</span></label>
               <select name="acess" id="acces-DOadress">
                 <option value="basement"> Basement</option>
                 <option value="Main floor">Main floor</option>
                 <option value="Upstrairs"> Upstrairs</option>
               </select>
             </div>
-          </fieldset>
-            <fieldset class="row gy-4">
-              <legend> additional information</legend>
+          
             <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Subject (Details about any large or delicate items like pianos and antiques)</label>
+              <label for="subject-field" class="pb-2">Subject (Details about any large or delicate items like pianos and antiques) <span id="oblige">*</span></label>
               <textarea class="form-control" name="message" rows="5" id="subject-field" required="required"></textarea>
             </div>
 
             <div class="col-md-12">
-              <label for="message-field" class="pb-2">Additional Services (Packing, unpacking, or storage needs)</label>
+              <label for="message-field" class="pb-2">Additional Services (Packing, unpacking, or storage needs) <span id="oblige">*</span></label>
               <textarea class="form-control" name="message" rows="5" id="message-field" required="required"></textarea>
             </div>
 
             <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
 
-              <button type="submit">Send Message</button>
+              <button type="submit" class="btn-get-fre">Send Message</button>
             </div>
-          </fieldset>
+          
           </div>
         </form>
       </div>
@@ -162,33 +145,30 @@
         <div class="container footer-top">
           <div class="row gy-3">
             <div class="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" class="d-flex align-items-center">
-                <span class="sitename">NND-SERVICEs</span>
-              </a>
-              <div class="footer-contact pt-3">
+              <h4 id="titre-foot"> <a href="index.html"> NND SERVICES </a></h4>
+              <div>
                 <p>24 Abberfield Crescent NE</p>
                 <p>Calgary Alberta- T2A6N6</p>
-                <p class="mt-3"><strong>Phone:</strong> <span>+1 000 000 0000</span></p>
-                <p><strong>Email:</strong> <span></span></p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+1 368 889 5240</span></p>
+                <p><strong>Email:</strong> <span>fghjklm</span></p>
               </div>
             </div>
     
     
-            <div class="col-lg-3 col-md-3 footer-links">
-              <h4>Our Services</h4>
+            <div class="col-lg-4 col-md-10 footer-links">
+              <h4 id="titre-foot">Our Services</h4>
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICES </a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICES</a></li>
-                <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICES</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICE </a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICE</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICE</a></li>
               </ul>
             </div>
     
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Follow Us</h4>
-              <p>follow our various updates also on</p>
+            <div class="col-lg-2 col-md-8 footer-links">
+              <h4 id="titre-foot">Follow Us</h4>
               <div class="social-links d-flex">
                 <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61557885560451&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
               </div>
             </div>
     
@@ -196,7 +176,7 @@
         </div>
     
         <div class="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong class="px-1 sitename">TANKEU</strong> <span>All Rights Reserved</span></p>
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">NND SERVICES</strong> <span>All Rights Reserved</span></p>
           <div class="credits">
             
             Designed by <a href="https://bootstrapmade.com/">ChristelleTankeu</a>

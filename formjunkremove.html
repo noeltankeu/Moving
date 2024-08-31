@@ -30,18 +30,18 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-         <img src="assets/img/logo1.jpeg" alt="" id="logo"> 
+      <a href="index.html" class="me-auto">
+         <img src="assets/img/logo3.jpg" alt="" id="logo"> 
      <!--   <h1 class="sitename">logo</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="donate.html">Donate</a></li>
+          <li><a href="index.html"  >Home</a></li>
+          <li><a href="services.html" class="active" >Services</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="donate.html" >Donate</a></li>
           <li><a href="">EN|FR</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -54,15 +54,6 @@
         
     <div class="container section-title" data-aos="fade-up" id="sous-titre">
       <h2>Get a free quote for junk removal</h2>
-      <p>
-        NND SERVICES provides efficient junk removal 
-        solutions to help you declutter your space. 
-        From old furniture and appliances to yard waste 
-        and construction debris, our team handles all types 
-        of unwanted items. We are committed to disposing of 
-        or recycling your junk responsibly, leaving you with
-        a clean and tidy space.
-      </p>
     </div>
   </section>
     
@@ -70,40 +61,40 @@
     <form action=" " method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
       <div class="row gy-4">
 
-        <div class="col-md-6">
-          <label for="name-field" class="pb-2">Name</label>
+        <div class="col-md-12">
+          <label for="name-field" class="pb-2">Name <span id="oblige">*</span></label>
           <input type="text" name="name" id="name-field" class="form-control" required="required">
         </div>
 
-        <div class="col-md-6">
-          <label for="tel-field" class="pb-2">Tel.</label>
+        <div class="col-md-12">
+          <label for="tel-field" class="pb-2">Tel. <span id="oblige">*</span></label>
           <input type="tel" class="form-control" name="telephone" id="tel-field" required="required">
         </div>
 
-        <div class="col-md-6">
-          <label for="email-field" class="pb-2">E-mail</label>
+        <div class="col-md-12">
+          <label for="email-field" class="pb-2">E-mail <span id="oblige">*</span></label>
           <input type="email" class="form-control" name="email" id="email-field" required="required">
         </div>
 
-        <div class="col-md-6">
-          <label for="date-demenage-field" class="pb-2">Date  (When the junk removal should take place)</label>
+        <div class="col-md-12">
+          <label for="date-demenage-field" class="pb-2">Date  (When the junk removal should take place) <span id="oblige">*</span></label>
           <input type="date" name="date-demenage" id="date-demenage-field" class="form-control" required="required">
         </div>
 
-        <div class="col-md-6">
-          <label for="time-demenage-field" class="pb-2">Time (When the junk removal should take place)  </label>
+        <div class="col-md-12">
+          <label for="time-demenage-field" class="pb-2">Time (When the junk removal should take place)  <span id="oblige">*</span></label>
           <input type="time" name="date-demenage" id="time-demenage-field" class="form-control" required="required">
         </div>
 
-        <div class="col-md-6">
-          <label for="adress-field" class="pb-2"> Pick-up Address (Address where junk will be collected)</label>
+        <div class="col-md-12">
+          <label for="adress-field" class="pb-2"> Pick-up Address (Address where junk will be collected) <span id="oblige">*</span></label>
           <input type="text" name="PUadress" id="adress-field" class="form-control" required="required" >
         </div>
 
         <div class="col-md-12">
           <label for="subject-field" class="pb-2">
             Quantity/Volume (Approximate amount of junk, 
-            example, number of items or truckloads)
+            example, number of items or truckloads) <span id="oblige">*</span>
           </label>
           <textarea class="form-control" name="message" rows="5" id="subject-field" required="required"></textarea>
         </div>
@@ -111,17 +102,14 @@
         <div class="col-md-12">
           <label for="message-field" class="pb-2">
             Accessibility (Information on ease of access to the 
-            items. Example: stairs, narrow hallways)
+            items. Example: stairs, narrow hallways) <span id="oblige">*</span>
           </label>
           <textarea class="form-control" name="message" rows="5" id="message-field" required="required"></textarea>
         </div>
 
         <div class="col-md-12 text-center">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
 
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btn-get-fre">Send Message</button>
         </div>
 
       </div>
@@ -134,33 +122,30 @@
       <div class="container footer-top">
         <div class="row gy-3">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="d-flex align-items-center">
-              <span class="sitename">NND-SERVICEs</span>
-            </a>
-            <div class="footer-contact pt-3">
+            <h4 id="titre-foot"> <a href="index.html"> NND SERVICES </a></h4>
+            <div>
               <p>24 Abberfield Crescent NE</p>
               <p>Calgary Alberta- T2A6N6</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 000 000 0000</span></p>
-              <p><strong>Email:</strong> <span></span></p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 368 889 5240</span></p>
+              <p><strong>Email:</strong> <span>fghjklm</span></p>
             </div>
           </div>
   
   
-          <div class="col-lg-3 col-md-3 footer-links">
-            <h4>Our Services</h4>
+          <div class="col-lg-4 col-md-10 footer-links">
+            <h4 id="titre-foot">Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICES </a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICES</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICES</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICE </a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICE</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICE</a></li>
             </ul>
           </div>
   
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Follow Us</h4>
-            <p>follow our various updates also on</p>
+          <div class="col-lg-2 col-md-8 footer-links">
+            <h4 id="titre-foot">Follow Us</h4>
             <div class="social-links d-flex">
               <a href=""><i class="bi bi-whatsapp"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61557885560451&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
             </div>
           </div>
   
@@ -168,7 +153,7 @@
       </div>
   
       <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">TANKEU</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">NND SERVICES</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
           
           Designed by <a href="https://bootstrapmade.com/">ChristelleTankeu</a>

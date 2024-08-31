@@ -32,18 +32,18 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-         <img src="assets/img/logo1.jpeg" alt="" id="logo"> 
+      <a href="index.html" class="me-auto">
+         <img src="assets/img/logo3.jpg" alt="" id="logo"> 
      <!--   <h1 class="sitename">logo</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="donate.html">Donate</a></li>
+          <li><a href="#" class="active" >Home</a></li>
+          <li><a href="services.html" >Services</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="donate.html" >Donate</a></li>
           <li><a href="">EN|FR</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -52,26 +52,77 @@
   </header>
 
   <main class="main">
-    <section id="hero" class="hero section dark-background">
+    <section  class="hero section dark-background">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+        <div class="row gy-2">
+          <div class="col-lg-6">
             <h1>Let’s Move Together</h1>
-            <p id="papa">We specialize in moving, delivery, and junk removal, providing reliable and efficient
+            <p id="papa">
+              We specialize in moving, delivery, and junk removal, providing reliable and efficient
               solutions to simplify your life. Additionally, our donation program helps you give back by
               collecting and distributing gently used items to those in need. We are committed to delivering
               quality service with a community-focused approach. Let us handle the heavy lifting while you
-              focus on what matters most.</p>
+              focus on what matters most. <br><br>
+              <span id="heure"> H24|7</span>
+            </p>
             <div class="d-flex">
               <a href="about.html" class="btn-get-started">Get Started</a>
-            <!--  <a href="" class="glightbox btn-watch-video d-flex align-items-center">
-              <i class="bi bi-play-circle"></i>
-              <span>Watch Video</span></a> -->
+              <a href="./assets/img/video.mp4"  class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
           </div>
-          <div class="col-lg-6 order-1  " id="img-prin">
-            <img src="assets/img/hero.jpg"  alt="" id="img-prin">
-          </div>
+
+          <div class="swiper init-swiper col-lg-6" id="img-prin">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 300,
+                "autoplay": {
+                  "delay": 2000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="./assets/img/Slide 1 page acceuil.png"  alt="" id="ip">
+              </div>
+
+              <div class="swiper-slide">
+                  <img src="./assets/img/Slide 2 page acceuil.png"  alt="" id="ip">  
+              </div>
+
+              <div class="swiper-slide">                
+                  <img src="./assets/img/Slide 3 page acceuil.png"  alt="" id="ip">               
+              </div>
+
+              <div class="swiper-slide">                
+                  <img src="./assets/img/Slide 4 page acceuil.png"  alt="" id="ip">                
+              </div>
+
+              <div class="swiper-slide">               
+                  <img src="./assets/img/Slide 5 page acceuil.png"  alt="" id="ip">                
+              </div>
+
+              <div class="swiper-slide">                
+                  <img src="./assets/img/Slide 6 page acceuil.png"  alt="" id="ip">               
+              </div>
+
+              <div class="swiper-slide">                
+                  <img src="./assets/img/Slide 7 page acceuil.png"  alt="" id="ip">                
+              </div>
+
+              <div class="swiper-slide">                
+                  <img src="./assets/img/Slide 8 page acceuil.png"  alt="" id="ip">                
+              </div>
+
+              <div class="swiper-slide">                
+                  <img src="./assets/img/Slide 9 page acceuil.png"  alt="" id="ip">                
+              </div>
         </div>
       </div>
     </section>
@@ -83,33 +134,30 @@
     <div class="container footer-top">
       <div class="row gy-3">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">NND-SERVICEs</span>
-          </a>
-          <div class="footer-contact pt-3">
+          <h4 id="titre-foot"> <a href="index.html"> NND SERVICES </a></h4>
+          <div>
             <p>24 Abberfield Crescent NE</p>
             <p>Calgary Alberta- T2A6N6</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 000 000 0000</span></p>
-            <p><strong>Email:</strong> <span></span></p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 368 889 5240</span></p>
+            <p><strong>Email:</strong> <span>fghjklm</span></p>
           </div>
         </div>
 
 
-        <div class="col-lg-3 col-md-3 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-lg-4 col-md-10 footer-links">
+          <h4 id="titre-foot">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICES </a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICES</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICES</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html">MOVING SERVICE </a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html">DELIVERY SERVICE</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html">JUNK REMOVAL SERVICE</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
-          <p>follow our various updates also on</p>
+        <div class="col-lg-2 col-md-8 footer-links">
+          <h4 id="titre-foot">Follow Us</h4>
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-whatsapp"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61557885560451&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
           </div>
         </div>
 
