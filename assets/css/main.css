@@ -137,7 +137,7 @@ h6 {
   }
 
   .header .navmenu {
-    order: 3;
+    order: 1;
   }
 }
 
@@ -2213,7 +2213,7 @@ legend{
 
 #contact-bg{
   background-image: url(../img/Arrière\ plan\ CONTACT.png);
-  width: 100% ;
+  width: 100%;
   min-height: 680px;
 }
 
